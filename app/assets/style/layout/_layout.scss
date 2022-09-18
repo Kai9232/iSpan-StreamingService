@@ -1,0 +1,124 @@
+.navbar {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 3px 9px black;
+  z-index: 2;
+  &-toggler {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    padding: 0;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:767px) {
+      display: block;
+      background-color: #1e1e1e;
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 1s;
+      position: absolute;
+      z-index: 2;
+      top: 80px;
+      left: 0;
+      right: 0;
+    };
+  }
+  &-nav_show .navbar-nav {
+    max-height: 360px;
+  }
+  & .nav-link {
+    color: $white;
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+.logo {
+  display: block;
+  font-size: 32px;
+  line-height: 48px;
+  font-family: 'Raleway';
+  font-weight: 900;
+  color: $primary;
+}
+.search {
+  display: flex;
+  width: 240px;
+  @media (max-width:767px) {
+    display: none;
+  };
+  & input[type="text"] {
+    background-color: rgba(255,255,255,0);
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 8px;
+    padding: 8px;
+  }
+}
+.btn-search {
+  line-height: 0;
+  border: 0;
+  padding: 0;
+  position: relative;
+  right: 36px;
+}
+.login {
+  display: block;
+  font-size: 20px;
+  color: $primary;
+  &-text {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $gray-800;
+    color: $gray-500;
+    padding: 0 16px;
+  }
+  &-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 8px;
+    left: 32px;
+  }
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  &-bg-banner {
+    background-image: url("../images/subscribe-bg-lg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 100px 0;
+  }
+  & input[type="email"] {
+    width: 100%;
+    background-color: rgba(255,255,255,0);
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 4px 0 0 4px;
+    padding: 8px;;
+    @media (min-width:768px) {
+      border-radius: 8px 0 0 8px;
+      padding: 16px;
+    }
+  }
+  & input[type="submit"] {
+    border-radius: 0 4px 4px 0;
+    @media (min-width:768px) {
+      border-radius: 0 8px 8px 0;
+    }
+  }
+}
+.bg-footer {
+  background-color: $gray-800;
+  padding: 16px 16px;
+  @media (min-width:768px) {
+    padding: 16px 32px;
+  }
+}

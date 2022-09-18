@@ -1,0 +1,1217 @@
+---
+title: 電影｜RGS VIDEO
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<section class="container pt-4 pb-8 pt-md-8 pb-md-16">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+    <li class="breadcrumb-item active" aria-current="page">電影</li>
+  </ul>
+  <ul class="nav nav-pills justify-content-center justify-content-md-start mb-2 mb-md-12" id="pills-tab" role="tablist">
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2 active" id="pills-new-tab" data-bs-toggle="pill" data-bs-target="#pills-new" type="button" role="tab">最新</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-drama-tab" data-bs-toggle="pill" data-bs-target="#pills-drama" type="button" role="tab">劇情</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-action-tab" data-bs-toggle="pill" data-bs-target="#pills-action" type="button" role="tab">動作</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-romantic-tab" data-bs-toggle="pill" data-bs-target="#pills-romantic" type="button" role="tab">愛情</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-comedy-tab" data-bs-toggle="pill" data-bs-target="#pills-comedy" type="button" role="tab">喜劇</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-science-fiction-tab" data-bs-toggle="pill" data-bs-target="#pills-science-fiction" type="button" role="tab">科幻</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-war-tab" data-bs-toggle="pill" data-bs-target="#pills-war" type="button" role="tab">戰爭</button>
+    </li>
+    <li class="nav-item mb-2 me-2 mb-md-0" role="presentation">
+      <button class="btn btn-outline-gray px-4 py-2" id="pills-animation-tab" data-bs-toggle="pill" data-bs-target="#pills-animation" type="button" role="tab">動畫</button>
+    </li>
+  </ul>
+  <div class="tab-content mb-4 mb-md-16" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-new" role="tabpanel">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie1-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="play.html" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">捍衛戰士：獨行俠</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie2-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">雷神索爾：愛與雷霆</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie3-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">媽的多重宇宙</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie4-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">阿凡達（重映版）</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie5-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">侏羅紀世界：統霸天下</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie6-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">犯罪都市2</h4>
+                <p class="fs-7 text-truncate">2022 / 韓國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie7-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">奇異博士2：失控多重宇宙</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie8-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">小小兵2：格魯的崛起</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie9-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">神隱少女</h4>
+                <p class="fs-7 text-truncate">2022 / 日本 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie10-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">機密同盟2</h4>
+                <p class="fs-7 text-truncate">2022 / 韓國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie11-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">航海王劇場版：紅髮歌姬</h4>
+                <p class="fs-7 text-truncate">2022 / 日本 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie12-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">蜘蛛人：無家日</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured2-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">沙丘</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured3-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">脫稿玩家</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured5-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">哥吉拉大戰金剛</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured7-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">月老</h4>
+                <p class="fs-7 text-truncate">2021 / 台灣 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured8-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">全面啟動</h4>
+                <p class="fs-7 text-truncate">2010 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured14-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">黑暗騎士：黎明昇起</h4>
+                <p class="fs-7 text-truncate">2012 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured11-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">駭客任務：復活</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured12-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">怪獸與鄧不利多的秘密</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie13-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">金牌特務：金士曼起源</h4>
+                <p class="fs-7 text-truncate">2021 / 美國、英國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie14-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">名偵探皮卡丘</h4>
+                <p class="fs-7 text-truncate">2019 / 美國、日本 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie15-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">復仇者聯盟：終局之戰</h4>
+                <p class="fs-7 text-truncate">2019 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie16-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">當男人戀愛時</h4>
+                <p class="fs-7 text-truncate">2021 / 台灣 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-drama" role="tabpanel">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie1-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="play.html" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">捍衛戰士：獨行俠</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie7-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">奇異博士2：失控多重宇宙</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie9-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">神隱少女</h4>
+                <p class="fs-7 text-truncate">2022 / 日本 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured2-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">沙丘</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured8-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">全面啟動</h4>
+                <p class="fs-7 text-truncate">2010 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured12-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">怪獸與鄧不利多的秘密</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie16-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">當男人戀愛時</h4>
+                <p class="fs-7 text-truncate">2021 / 台灣 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie21-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">不可能的任務：全面瓦解</h4>
+                <p class="fs-7 text-truncate">2018 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie33-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">尼羅河謀殺案</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie24-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">攻敵必救</h4>
+                <p class="fs-7 text-truncate">2017 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie19-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">我吃了那男孩一整年的早餐</h4>
+                <p class="fs-7 text-truncate">2022 / 台灣 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie20-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">大賣空</h4>
+                <p class="fs-7 text-truncate">2016 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie22-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">時尚惡女：庫伊拉</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie26-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">高年級實習生</h4>
+                <p class="fs-7 text-truncate">2015 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie29-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">野蠻遊戲：瘋狂叢林</h4>
+                <p class="fs-7 text-truncate">2017 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie31-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">鋒迴路轉</h4>
+                <p class="fs-7 text-truncate">2019 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie32-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">比悲傷更悲傷的故事</h4>
+                <p class="fs-7 text-truncate">2018 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie41-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">神偷大軍</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie34-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">瞞天過海：八面玲瓏</h4>
+                <p class="fs-7 text-truncate">2018 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie35-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">華爾街之狼</h4>
+                <p class="fs-7 text-truncate">2014 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie37-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">大娛樂家</h4>
+                <p class="fs-7 text-truncate">2017 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie42-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">必勝球探</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie38-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">怪獸與葛林戴華德的罪行</h4>
+                <p class="fs-7 text-truncate">2018 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie40-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">決勝女王</h4>
+                <p class="fs-7 text-truncate">2018 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-action" role="tabpanel">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie2-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">雷神索爾：愛與雷霆</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie3-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">媽的多重宇宙</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie4-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">阿凡達（重映版）</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie5-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">侏羅紀世界：統霸天下</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie6-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">犯罪都市2</h4>
+                <p class="fs-7 text-truncate">2022 / 韓國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie8-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">小小兵2：格魯的崛起</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie10-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">機密同盟2</h4>
+                <p class="fs-7 text-truncate">2022 / 韓國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie12-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">蜘蛛人：無家日</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured3-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">脫稿玩家</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured5-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">哥吉拉大戰金剛</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured14-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">黑暗騎士：黎明昇起</h4>
+                <p class="fs-7 text-truncate">2012 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/featured11-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">駭客任務：復活</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie13-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">金牌特務：金士曼起源</h4>
+                <p class="fs-7 text-truncate">2021 / 美國、英國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie15-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">復仇者聯盟：終局之戰</h4>
+                <p class="fs-7 text-truncate">2019 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie30-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">捍衛戰士</h4>
+                <p class="fs-7 text-truncate">1986 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie17-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">秘境探險</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie25-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">玩命關頭9</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-6">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie39-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">明日邊界</h4>
+                <p class="fs-7 text-truncate">2014 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie18-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">玩命鈔劫</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie27-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">刺客教條</h4>
+                <p class="fs-7 text-truncate">2016 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie23-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">永恆族</h4>
+                <p class="fs-7 text-truncate">2022 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2 mb-4 mb-md-0">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie36-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">金牌特務：機密對決</h4>
+                <p class="fs-7 text-truncate">2017 / 美國、英國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie44-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">死侍2</h4>
+                <p class="fs-7 text-truncate">2018 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="productItem">
+            <figure>
+              <div class="position-relative">
+                <img src="assets/images/movie43-h.jpg" alt="院線海報">
+                <div class="overlay">
+                  <a href="#" class="stretched-link"><span class="material-icons">play_circle</span></a>
+                </div>
+              </div>
+              <figcaption class="bg-gray-800 p-4">
+                <h4 class="fs-4 text-truncate mb-1">尚氣與十環傳奇</h4>
+                <p class="fs-7 text-truncate">2021 / 美國 / 電影</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link active" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+</section>

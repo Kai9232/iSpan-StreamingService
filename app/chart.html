@@ -1,0 +1,488 @@
+---
+title: 排行榜｜RGS VIDEO
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<main class="container pt-4 pb-8 pt-md-8 pb-md-16">
+  <ul class="breadcrumb mb-md-12">
+    <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+    <li class="breadcrumb-item active"">排行榜</li>
+  </ul>
+  <section class="mb-10 mb-md-2">
+    <h2 class="fs-1 fw-bold text-center mb-4 mb-md-6">熱播排行榜</h2>
+    <p class="text-center mb-8 mb-md-12">根據主題內容，以每周觀看數及聲量或好評排序，數據皆由 RGS 站內提供。</p>
+    <div>
+      <ul class="d-none d-md-flex mb-md-4">
+        <li class="d-md-flex align-items-center w-sm-100 w-md-45 text-secondary">
+          <div class="d-flex text-center w-25">
+            <p class="w-40">本周</p>
+            <i class="w-20"></i>
+            <p class="w-40">上周</p>
+          </div>
+          <div class="d-md-flex justify-content-md-between w-75">
+            <p class="ps-md-4">片名</p>
+            <p class="text-end pe-md-6">觀看次數</p>
+          </div>
+        </li>
+        <li class="d-md-flex font-noto text-end w-sm-100 w-md-55 text-secondary">
+          <p class="w-md-20 pe-md-6">24h熱門度</p>
+          <p class="w-md-20 pe-md-6">7d熱門度</p>
+          <p class="w-md-20 pe-md-6">上架日期</p>
+          <p class="w-md-20 pe-md-6">預告片</p>
+          <p class="w-md-20 pe-md-6">滿意度</p>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">1</p>
+            <span class="d-none d-md-block w-20"></span>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">1</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/movie1-h.jpg" alt="院線電影">
+              <p class="fs-6 fs-md-5 fw-bold">捍衛戰士：獨行俠</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">177,412</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart1" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-danger w-md-20 pe-md-6">+2.43%</p>
+          <p class="text-danger w-md-20 pe-md-6">+8.82%</p>
+          <p class="w-md-20 pe-md-6">2022-06-25</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">5.0</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart1">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>+2.43%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+8.82%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-06-25</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">5.0</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">2</p>
+            <i class="d-none d-md-block fa-sharp fa-solid fa-circle-up fs-4 text-danger w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">3</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/drama4-h.jpg" alt="話題夯劇">
+              <p class="fs-6 fs-md-5 fw-bold">非常律師禹英禑</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">152,496</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart2" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-danger w-md-20 pe-md-6">+1.27%</p>
+          <p class="text-danger w-md-20 pe-md-6">+7.49%</p>
+          <p class="w-md-20 pe-md-6">2022-07-29</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">5.0</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart2">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>+1.27%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+7.49%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-07-29</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">5.0</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">3</p>
+            <i class="d-none d-md-block fa-solid fa-circle-plus fs-4 text-primary w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">-</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/movie4-h.jpg" alt="院線電影">
+              <p class="fs-6 fs-md-5 fw-bold">阿凡達（重映版）</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">140,057</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart3" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-secondary w-md-20 pe-md-6">-0.96%</p>
+          <p class="text-danger w-md-20 pe-md-6">+3.68%</p>
+          <p class="w-md-20 pe-md-6">2022-09-23</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.8</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart3">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>-0.96%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+3.68%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-09-23</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.8</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">4</p>
+            <i class="d-none d-md-block fa-sharp fa-solid fa-circle-up fs-4 text-danger w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">5</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/show2-h.jpg" alt="強檔綜藝">
+              <p class="fs-6 fs-md-5 fw-bold">少時貪探</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">122,480</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart4" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-danger w-md-20 pe-md-6">+2.79%</p>
+          <p class="text-secondary w-md-20 pe-md-6">-0.38%</p>
+          <p class="w-md-20 pe-md-6">2022-09-05</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.6</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart4">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>+2.79%</p>
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>-0.38%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-09-05</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.6</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">5</p>
+            <i class="d-none d-md-block fa-solid fa-circle-down fs-4 text-secondary w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">2</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/movie2-h.jpg" alt="院線電影">
+              <p class="fs-6 fs-md-5 fw-bold">雷神索爾：愛與雷霆</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">102,108</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart5" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-secondary w-md-20 pe-md-6">-1.64%</p>
+          <p class="text-danger w-md-20 pe-md-6">+1.22%</p>
+          <p class="w-md-20 pe-md-6">2022-08-06</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.1</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart5">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>-1.64%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+1.22%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-08-06</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.1</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">6</p>
+            <i class="d-none d-md-block fa-solid fa-circle-plus fs-4 text-primary w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">-</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/drama1-h.jpg" alt="話題夯劇">
+              <p class="fs-6 fs-md-5 fw-bold">睡魔</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">92,145</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart6" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-secondary w-md-20 pe-md-6">-0.35%</p>
+          <p class="text-danger w-md-20 pe-md-6">+0.97%</p>
+          <p class="w-md-20 pe-md-6">2022-09-05</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.6</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart6">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>-0.35%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+0.97%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-09-05</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.6</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">7</p>
+            <i class="d-none d-md-block fa-solid fa-circle-down fs-4 text-secondary w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">4</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/drama3-h.jpg" alt="話題夯劇">
+              <p class="fs-6 fs-md-5 fw-bold">龍族前傳</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">88,237</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart7" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-danger w-md-20 pe-md-6">+0.43%</p>
+          <p class="text-secondary w-md-20 pe-md-6">-0.77%</p>
+          <p class="w-md-20 pe-md-6">2022-08-22</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.6</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart7">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>+0.43%</p>
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>-0.77%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-08-22</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.6</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">8</p>
+            <i class="d-none d-md-block fa-sharp fa-solid fa-circle-up fs-4 text-danger w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">10</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/featured1-h.jpg" alt="話題夯劇">
+              <p class="fs-6 fs-md-5 fw-bold">滴水的推理書屋</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">76,033</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart8" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-danger w-md-20 pe-md-6">+1.59%</p>
+          <p class="text-danger w-md-20 pe-md-6">+3.26%</p>
+          <p class="w-md-20 pe-md-6">2022-08-31</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.5</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart8">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>+1.59%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+3.26%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-08-31</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.5</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">9</p>
+            <i class="d-none d-md-block fa-solid fa-circle-down fs-4 text-secondary w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">6</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/drama6-h.jpg" alt="話題夯劇">
+              <p class="fs-6 fs-md-5 fw-bold">怪奇物語</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">50,268</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart9" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-secondary w-md-20 pe-md-6">-2.48%</p>
+          <p class="text-secondary w-md-20 pe-md-6">-1.91%</p>
+          <p class="w-md-20 pe-md-6">2022-07-27</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.7</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart9">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>-2.48%</p>
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>-1.91%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-07-27</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.7</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="d-md-flex align-items-md-center border mt-n100">
+        <li class="d-flex align-items-center position-relative w-sm-100 w-md-45">
+          <div class="d-md-flex align-items-md-center text-center w-sm-10 w-md-25">
+            <p class="fs-3 font-paytone text-primary w-40 mx-auto mx-md-0">10</p>
+            <i class="d-none d-md-block fa-solid fa-circle-plus fs-4 text-primary w-20 pt-1"></i>
+            <p class="d-none d-md-block gray-500 fs-3 font-paytone w-40">-</p>
+          </div>
+          <div class="d-flex justify-content-between align-items-center w-sm-90 w-md-75">
+            <div class="d-flex align-items-center ps-2 py-4 ps-md-4">
+              <img class="h-48px rounded-circle me-2 me-md-4" src="assets/images/movie5-h.jpg" alt="話題夯劇">
+              <p class="fs-6 fs-md-5 fw-bold">侏羅紀世界：統霸天下</p>
+            </div>
+            <p class="fs-4 font-squada text-end pe-2 pe-md-6">39,841</p>
+          </div>
+          <a class="btn-chart d-md-none" data-bs-toggle="collapse" href="#chart10" role="button">
+            <i class="plus fa-sharp fa-solid fa-plus text-white"></i>
+            <i class="minus fa-sharp fa-solid fa-minus text-white"></i>
+          </a>
+        </li>
+        <li class="font-squada d-none d-md-flex justify-content-md-start fs-4 text-md-end w-md-55">
+          <p class="text-secondary w-md-20 pe-md-6">-1.07%</p>
+          <p class="text-danger w-md-20 pe-md-6">+3.14%</p>
+          <p class="w-md-20 pe-md-6">2022-09-08</p>
+          <a class="w-md-20 pe-md-6" href="#"><i class="fa-sharp fa-solid fa-video"></i></a>
+          <div class="d-flex justify-content-end align-items-center w-md-20 pe-md-6">
+            <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+            <p><span class="fs-4 text-primary">4.3</span></p>
+          </div>
+        </li>
+        <li class="collapse font-squada" id="chart10">
+          <div class="d-flex justify-content-center flex-wrap fs-4 text-center border-top w-sm-100 p-4">
+            <p class="text-secondary w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">24h熱門度</span>-1.07%</p>
+            <p class="text-danger w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary font-noto">7d熱門度</span>+3.14%</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">上架日期</span>2022-09-08</p>
+            <p class="w-sm-33 pe-md-6"><span class="d-block fs-7 text-secondary">預告片</span><a href="#"><i class="fa-sharp fa-solid fa-video"></i></a></p>
+            <div class="w-sm-33 pe-md-6">
+              <span class="d-block fs-7 text-secondary">滿意度</span>
+              <div class="d-flex justify-content-end align-items-center">
+                <span class="material-icons fs-3 text-primary mt-n1 me-1">star</span>
+                <p><span class="fs-4 text-primary">4.3</span></p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>

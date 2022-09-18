@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/utilitiesbs";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./helpers/base";
+@import "./helpers/utilities";
+
+@import "./components/accordion";
+@import "./components/button";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/progressbar";
+@import "./components/swiper";
+
+@import "./layout/layout";
+@import "./layout/index";
+@import "./layout/product";
+@import "./layout/play";
+@import "./layout/payment";

@@ -1,0 +1,129 @@
+---
+title: 線上付款｜RGS VIDEO
+layout: ./app/layout.ejs
+engine: ejs
+---
+
+<section class="bg-progressBar container-fluid pt-6 pb-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8 col-md-7 timeline-middle">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-md-5">
+        <div class="timeline-pointer text-center step-1 active">
+          <a href="details.html">訂單明細</a>
+        </div>
+      </div>
+      <div class="col-4 col-md-2">
+        <div class="timeline-pointer text-center step-2 active">
+          <p>線上付款</p>
+        </div>
+      </div>
+      <div class="col-4 col-md-5">
+        <div class="timeline-pointer text-center step-3">
+          <p>訂購完成</p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container pt-md-20 pb-md-30">
+  <form>
+    <div class="row">
+      <div class="col-md-4 offset-md-2">
+        <h3 class="fs-3 mb-4 mb-md-6">會員資料</h3>
+        <label for="Name" class="form-label gray-500">姓名</label>
+        <input type="text" class="form-control mb-4 mb-md-6" id="Name" placeholder="Robert Downey" disabled>
+        <label for="Email" class="form-label gray-500">Email</label>
+        <input type="email" class="form-control mb-4 mb-md-6" id="Email" placeholder="video@gmail.com" disabled>
+        <label for="Phone" class="form-label gray-500">電話</label>
+        <input type="tel" class="form-control mb-4 mb-md-6" id="Phone" placeholder="0912-345-678" disabled>
+        <label for="Address" class="form-label gray-500">地址</label>
+        <input type="text" class="form-control mb-4 mb-md-6" id="Address" placeholder="20 W 34th St., New York, NY 10001" disabled>
+      </div>
+      <div class="col-md-4">
+        <h3 class="fs-3 mb-4 mb-md-6">訂單資訊</h3>
+        <div class="bg-pay mb-4 mb-md-6">
+          <input class="form-check-input me-1" type="radio" name="Payment" id="creditCard1" checked>
+          <label class="form-check-label me-4" for="creditCard1">信用卡一次付清</label>
+          <input class="form-check-input me-1" type="radio" name="Payment" id="creditCard2">
+          <label class="form-check-label me-4" for="creditCard2">信用卡分期付款</label><br>
+          <input class="form-check-input me-1" type="radio" name="Payment" id="ATM">
+          <label class="form-check-label me-4" for="ATM">ATM轉帳</label>
+          <input class="form-check-input me-1" type="radio" name="Payment" id="mobile">
+          <label class="form-check-label me-4" for="mobile">行動支付</label>
+          <input class="form-check-input me-1" type="radio" name="Payment" id="market">
+          <label class="form-check-label me-4" for="market">超商代碼繳費</label>
+        </div>
+        <label for="cardName" class="form-label gray-500">持卡人姓名</label>
+        <input type="text" class="form-control mb-4 mb-md-6" id="cardName" name="CardName" placeholder="Your name">
+        <div class="row mb-4 mb-md-6">
+          <div class="col-12">
+            <label for="cardNumber" class="form-label gray-500">信用卡號</label>
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control me-1" id="cardNumber" name="cardNumber">
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control me-1" id="cardNumber" name="cardNumber">
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control me-1" id="cardNumber" name="cardNumber">
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" id="cardNumber" name="cardNumber">
+          </div>
+        </div>
+        <div class="row mb-6 mb-md-8">
+          <div class="col-12">
+            <label class="form-label gray-500">有效日期</label>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select me-1">
+              <option selected>請選擇</option>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <select class="form-select me-1">
+              <option selected>請選擇</option>
+              <option value="1">2022</option>
+              <option value="2">2023</option>
+              <option value="3">2024</option>
+              <option value="4">2025</option>
+              <option value="5">2026</option>
+              <option value="6">2027</option>
+              <option value="7">2028</option>
+              <option value="8">2029</option>
+              <option value="9">2030</option>
+              <option value="10">2031</option>
+              <option value="11">2032</option>
+              <option value="12">2033</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="驗證碼">
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <p class="fs-2 fw-bold font-roboto text-primary">NT $320</p>
+          <a href="finish.html" class="btn btn-gradient fs-4 px-8 py-2">確認結帳</a>
+          <!-- <input type="submit" value="確認結帳" class="btn btn-gradient fs-4 px-8 py-2"> -->
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
