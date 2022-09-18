@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>訂購完成｜RGS VIDEO</title>
+    <!-- Link Animate動態效果 -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css'>
+    <!-- Link Google Fonts Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- Link Lightbox's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css"
+      integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <!-- Link AOS視差滾動 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- Link Icon -->
+    <link rel="icon" type="image/png" href="assets/images/logo-icon.png">
+  </head>
+
+  <body>
+    <nav class="container-fluid navbar navbar-expand-md px-md-8">
+      <h2><a class="logo" href="index.html">RGS VIDEO</a></h2>
+      <button class="navbar-toggler" type="button">
+        <span class="material-icons text-white">menu</span>
+      </button>
+      <div class="navbar-collapse justify-content-md-between">
+        <ul class="navbar-nav ms-md-4">
+          <li class="nav-item">
+            <a class="nav-link d-block d-md-none fs-5 text-center pt-6 pb-3 px-md-6 py-md-0" href="#" data-bs-toggle="modal" data-bs-target="#login">註冊｜登入</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-center py-3 px-md-6 py-md-0" href="product.html">電影</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-center py-3 px-md-6 py-md-0" href="#">戲劇</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-center py-3 px-md-6 py-md-0" href="#">綜藝</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-center py-3 px-md-6 py-md-0" href="#">主題館</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5 text-center pt-3 pb-6 px-md-6 py-md-0" href="chart.html">排行榜</a>
+          </li>
+        </ul>
+        <div class="d-none d-md-flex align-items-md-center">
+          <form class="search">
+            <input type="text" placeholder="請輸入關鍵字" name="search">
+            <button type="submit" class="btn btn-search"><span class="material-icons align-middle">search</span></button>
+          </form>
+          <a class="login text-center py-3 ps-md-6 py-md-0" href="#" data-bs-toggle="modal" data-bs-target="#login">註冊｜登入</a>
+        </div>
+      </div>
+    </nav>
+
+    
+<section class="bg-progressBar container-fluid pt-6 pb-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8 col-md-7 timeline-primary">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 col-md-5">
+        <div class="timeline-pointer text-center step-1 active">
+          <a href="details.html">訂單明細</a>
+        </div>
+      </div>
+      <div class="col-4 col-md-2">
+        <div class="timeline-pointer text-center step-2 active">
+          <a href="payment.html">線上付款</a>
+        </div>
+      </div>
+      <div class="col-4 col-md-5">
+        <div class="timeline-pointer text-center step-3  active">
+          <p>訂購完成</p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container pt-md-10 pb-md-30">
+  <div class="row justify-content-md-center">
+    <div class="col-md-6">
+      <span class="material-icons d-block fs-1 text-secondary text-center mb-2">task_alt</span>
+      <p class="fs-md-4 text-center mb-8">
+        已完成購買，以下是您的訂單資訊：
+      </p>
+      <div class="border border-2 rounded-6 border-gray-dull mb-8">
+        <h2 class="bg-gray-dull fs-5 px-6 py-4">訂單資訊</h2>
+        <ul class="font-roboto px-6 py-4">
+          <li class="mb-4">您使用的方案是<span class="fs-4 fw-bold text-primary">&ensp;單次付費</span></li>
+          <li class="mb-2">訂單編號：<span class="text-decoration-underline">220715286057806</span></li>
+          <li class="mb-2">訂單日期：2022-09-19 15:16:18</li>
+          <li class="mb-2">訂單金額：<span class="fw-bold text-primary">320 元</span></li>
+          <li class="mb-2">
+            訂單內容：
+            <ul class="d-flex flex-warp pt-2">
+              <li class="border rounded-3 me-2 p-2">捍衛戰士：獨行俠</li>
+              <li class="border rounded-3 me-2 p-2">沙丘</li>
+              <li class="border rounded-3 p-2">永恆族</li>
+            </ul>
+          </li>
+          <li class="mb-2">付款方式：信用卡一次付清</li>
+          <li>影片觀看期限：2022-12-31 23:59:59</li>
+        </ul>
+      </div>
+      <div class="text-center">
+        <a href="index.html" class="btn btn-gradient px-8 py-2">返回首頁</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <div class="subscribe-bg-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="fs-1 fw-bold font-roboto mb-6 mb-md-12">Subscribe for news<br>and special offers!</h2>
+              <form class="subscribe">
+                <input type="email" placeholder="Your email address" name="email">
+                <input type="submit" value="Subscribe" class="btn btn-gradient fs-6 fs-md-4 px-2 py-2 px-md-8 py-md-4">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-footer">
+        <ul class="d-md-flex justify-content-md-between align-items-md-center">
+          <li class="font-roboto mb-2 mb-md-0">
+            Copyright © 2022 by YiKai. All rights reserved.
+          </li>
+          <li>
+            <ul class="d-md-flex">
+              <li class="mb-2 mb-md-0 me-md-12">
+                <button type="button" class="btn border-0 p-0">關於RGS VIDEO</button>
+              </li>
+              <li class="mb-2 mb-md-0 me-md-12">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#contact">聯絡客服</button>
+              </li>
+              <li class="mb-2 mb-md-0 me-md-12">
+                <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#privacy">隱私權政策</button>
+              </li>
+              <li>
+                <button type="button" class="btn border-0 p-0">服務條款</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="topBtn" class="btn-toTop" type="button"></button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="modal-content position-relative">
+                <div class="w-sm-100 w-60 mx-auto">
+                  <h3 class="modal-title text-center mb-6 mb-md-8" id="exampleModalLabel">登入</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body p-0">
+                    <form>
+                      <div class="mb-4">
+                        <label for="Text" class="form-label gray-500">帳號</label>
+                        <input type="text" class="form-control bg-gray-dark" id="Text" placeholder="請輸入Email或手機號碼" required>
+                      </div>
+                      <div class="mb-6">
+                        <label for="Password" class="form-label gray-500">密碼</label>
+                        <input type="password" class="form-control bg-gray-dark mb-2" id="Password" placeholder="請輸入密碼" required>
+                        <a class="d-block gray-500 text-end" href="#">忘記密碼</a>
+                      </div>
+                      <input type="submit" value="登入" class="btn btn-gray-dull w-100 mb-6 py-2" disabled>
+                      <p class="gray-500 text-center mb-9 mb-md-12">還不是會員嗎？
+                        <a href="#" data-bs-target="#signup" data-bs-toggle="modal" data-bs-dismiss="modal">立即註冊新帳號</a>
+                      </p>
+                      <div class="modal-footer border-0 p-0">
+                        <div class="border-bottom border-gray-500 position-relative mb-7">
+                          <p class="login-text">其他登入方式</p>
+                        </div>
+                        <button class="btn btn-outline-gradient w-100 position-relative mb-4 mb-md-6 py-2"><img src="assets/images/icon_fb.svg" alt="Facebook" class="login-icon">Facebook 登入</button>
+                        <button class="btn btn-outline-gradient w-100 position-relative py-2"><img src="assets/images/icon_google.svg" alt="Google" class="login-icon">Google 登入</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signup" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="modal-content position-relative">
+                <div class="w-sm-100 w-60 mx-auto">
+                  <h3 class="modal-title text-center mb-6 mb-md-8" id="exampleModalLabel2">註冊</h3>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="modal-body p-0">
+                    <form>
+                      <div class="mb-4">
+                        <label for="Text" class="form-label gray-500">帳號</label>
+                        <input type="text" class="form-control bg-gray-dark mb-2" id="Text" required>
+                        <p class="gray-500">帳號請設定為您的 Email 或手機號碼</p>
+                      </div>
+                      <div class="mb-4">
+                        <label for="Password" class="form-label gray-500">密碼</label>
+                        <input type="password" class="form-control bg-gray-dark mb-2" id="Password" required>
+                        <p class="gray-500">密碼需為 6 碼以上的英文或數字</p>
+                      </div>
+                      <p class="gray-500 mb-6">按下註冊的同時，表示您已詳閱我們的<span class="text-primary">資料使用政策與服務條款</span>，同意使用 RGS VIDEO 所提供的服務。</p>
+                      <input type="submit" value="註冊" class="btn btn-gray-dull w-100 mb-6 py-2" disabled>
+                      <p class="gray-500 text-center mb-9 mb-md-12">已經有帳號了？
+                        <a href="#" data-bs-target="#login" data-bs-toggle="modal" data-bs-dismiss="modal">馬上登入</a>
+                      </p>
+                      <div class="modal-footer border-0 p-0">
+                        <div class="border-bottom border-gray-500 position-relative mb-7">
+                          <p class="login-text">用社群帳號快速註冊</p>
+                        </div>
+                        <button class="btn btn-outline-gradient w-100 position-relative mb-4 mb-md-6 py-2"><img src="assets/images/icon_fb.svg" alt="Facebook" class="login-icon">Facebook 註冊</button>
+                        <button class="btn btn-outline-gradient w-100 position-relative py-2"><img src="assets/images/icon_google.svg" alt="Google" class="login-icon">Google 註冊</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="privacy" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content p-0">
+          <div class="modal-header border-bottom-0 justify-content-center px-0 py-4 py-md-10">
+            <h5 class="modal-title fs-3" id="exampleModalLabel">隱私權政策</h5>
+          </div>
+          <p class="modal-body lh-30 text-justify w-md-60 mx-auto pt-0 pb-16 px-6 px-md-0 pb-md-0">
+            RGS影音有限公司相關網站，包括但不限於：RGS影音網站、App平台及後續成立之網站等（以下合稱本網站）為RGS影音有限公司（以下稱「本公司」）所經營。本公司十分重視您的隱私權保護，將依個人資料保護法及本隱私權政策蒐集、處理及利用您的個人資料，並提供您對個人資料權利之行使與保護。若您不同意本隱私權政策之全部或部份者，請您停止使用本網站服務。<br><br>
+            1.本隱私權政策適用之範圍
+            請您在於使用本網站服務前，確認您已審閱並同意本隱私權政策所列全部條款，若您不同意全部或部份者，則請勿使用本網站服務。
+            本隱私權政策僅適用於本網站對您個人資料所為蒐集、處理與利用，不及於其他非本公司所有或控制之其他公司或個人。您可能經由本網站連結至第三人所經營之網站，各該網站所為之個人資料蒐集係依其網站之隱私權政策規定處理，與本公司無涉。<br>
+            2.個人資料蒐集、處理及利用說明
+            本公司可能透過Facebook或類似社群服務系統，於取得您的同意後，將部份本網站的資訊發布於您的社群活動資訊頁面，若您不同意該等訊息之發布，請您勿點選同意鍵，或於事後透過各該社群服務之會員機制移除該等資訊或拒絕本網站繼續發布相關訊息。若有任何問題，仍可與本公司聯絡，本公司將協助您確認、處理相關問題。
+            除依法應提供予司法、檢調機關、相關主管機關，或與本公司協力廠商為執行相關活動必要範圍之利用外，本公司將不會任意將您的個人資料提供予第三人。
+            當本公司或本網站被其他第三者購併或收購資產，導致經營權轉換時，本公司會於事前將相關細節公告於本網站，且本公司所擁有之全部或部分使用者資訊亦可能在經營權轉換的狀況下移轉給第三人。<br>
+            3.Cookie技術
+            為便於日後辨識，當您使用本網站服務時，本公司可能會在您的電腦上設定與存取Cookie。
+            您可以透過設定您的個人電腦或上網設備，決定是否允許Cookie技術的使用，若您關閉Cookie時，可能會造成您使用本網站服務時之不便利或部分功能限制。<br>
+            4.保密與安全性
+            本公司之員工，僅於其為您提供產品或服務之需求範圍內，對於您的個人資料得為有限之接觸。
+            為了保護您的帳戶及個人資料的安全，請您不要任意將個人帳號、密碼提供予第三人或允許第三人以您的個人資料申請帳號、密碼，否則，相關責任由您自行負擔。若您的帳號、密碼有外洩之虞，請您立即更改密碼，或通知本公司暫停該帳號（本公司可能會要求核對您的個人資料）。
+            網際網路並不是一個安全的資訊傳輸環境，請您在使用本網站時，避免將敏感的個人資料提供予他人或在網站上公開揭露。<br>
+            5.隱私權政策之修改
+            隱私權政策如經修改，本網站將以您所提供之電子郵件或簡訊通知您相關之重大變更，並於本網站公告。若您不同意該等變更或修改，請停止繼續使用本網站服務，並依本隱私權政策規定通知本公司停止蒐集、處理及利用您的個人資料。<br>
+            6.未成年人保護
+            本網站並非特別為未成年人/兒童設計，未成年人使用本網站時，若同意本網站蒐集、利用其個人資訊時，應在法定代理人或監護人之同下為之。法定代理人或監護人得隨時請求本公司停止特定帳號及其相關之個人資料之蒐集、處理及利用行為。
+          </p>
+          <div class="d-none d-md-flex modal-footer justify-content-center border-top-0 pt-0 pb-8">
+            <button type="button" class="btn btn-outline-gradient fs-6 text-white px-12 py-2" data-bs-dismiss="modal">關閉</button>
+          </div>
+          <div class="d-md-none fixed-bottom">
+            <button class="btn btn-outline-gradient fs-6 text-white w-100 py-3" type="button" data-bs-dismiss="modal">關閉</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="contact" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content p-0">
+          <div class="modal-header border-bottom-0 justify-content-center px-0 py-4 py-md-10">
+            <h5 class="modal-title fs-3" id="exampleModalLabel">聯絡客服</h5>
+          </div>
+          <div class="modal-body lh-30 text-justify w-md-25 mx-auto pt-0 pb-16 px-6 px-md-0 pb-md-0">
+            <p>我們相當重視您的意見，有任何疑問可以先參考「常見問題」，若仍有問題無法解決，請填妥以下資料，我們會盡快與您聯繫。</p>
+            <form>
+              <div class="mb-6">
+                <label for="Text" class="form-label gray-500">姓名</label>
+                <input type="text" class="form-control" id="Text" placeholder="請輸入您的會員姓名" required>
+              </div>
+              <div class="mb-6">
+                <label for="Text" class="form-label gray-500">會員帳號</label>
+                <input type="text" class="form-control" id="Text" placeholder="請輸入您的會員帳號" required>
+              </div>
+              <div class="mb-6">
+                <label for="Phone" class="form-label gray-500">聯絡電話</label>
+                <input type="tel" class="form-control" id="Phone" placeholder="請輸入您的聯絡方式" required>
+              </div>
+              <div class="mb-6">
+                <label for="Menu" class="form-label gray-500">問題類別</label>
+                <select class="form-select" id="Menu">
+                  <option selected>請選擇您的問題類型</option>
+                  <option value="1">內容報錯</option>
+                  <option value="2">觀看協助</option>
+                  <option value="3">會員權益</option>
+                  <option value="4">退費處理</option>
+                  <option value="5">回饋建議</option>
+                  <option value="6">其他</option>
+                </select>
+              </div>
+              <div class="mb-6">
+                <label for="Textarea" class="form-label gray-500">意見反應</label>
+                <textarea class="form-control" id="Textarea" placeholder="若有其他問題再請留言與我們反應" rows="5"></textarea>
+              </div>
+              <div class="d-md-flex">
+                <input type="submit" value="確認" class="btn btn-outline-gradient w-sm-100 w-md-50 mb-4 py-2 mb-md-0 me-md-4" data-bs-dismiss="modal">
+                <button type="button" class="btn btn-outline-gradient text-white w-sm-100 w-md-50 py-2" data-bs-dismiss="modal">取消</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper輪播 -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        // direction: 'vertical',
+        loop: true,
+        speed: 1000,
+        autoplay: {
+        delay: 5000,
+        },
+        effect: 'fade',
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      })
+
+      var swiper = new Swiper(".hot-swiper", {
+        autoplay: {
+            disableOnInteraction: false,
+            delay: 2000
+        },
+        speed: 2000,
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 1,
+        //多欄
+        breakpoints: {
+            768: {
+                slidesPerView: 3
+            },
+            992: {
+                slidesPerView: 5
+            }
+        }
+      });
+
+      var swiper = new Swiper(".sample-swiper", {
+        // autoplay: {
+        //     disableOnInteraction: false,
+        //     delay: 2000
+        // },
+        speed: 500,
+        loop: true,
+        spaceBetween: 16,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        loopFillGroupWithBlank: true,
+
+        //多欄
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            992: {
+                slidesPerView: 8,
+                slidesPerGroup: 8,
+            }
+        },
+        
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-next',
+          prevEl: '.swiper-prev',
+        },
+      });
+
+      var swiper = new Swiper(".pricing-swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 24,
+        centeredSlides: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+              slidesPerView: 1
+          },
+          992: {
+              slidesPerView: 3
+          }
+        },
+      });
+    </script>
+
+    <!-- AOS視差滾動 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+        
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js" integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
