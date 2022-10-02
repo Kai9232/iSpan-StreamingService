@@ -7,6 +7,11 @@ $(document).ready(function () {
   $('.btn-dark-close').hover(function () {
     $('.btn-dark-close').toggleClass('animate__heartBeat');
   });
+  $('.btn-favorite').click(function () {
+    $(this).find('.f-border').toggleClass('d-none');
+    $(this).find('.f-solid').toggleClass('d-block');
+    $(this).parent().find('p').toggleClass('text-secondary');
+  });
   $('.btn-chart').click(function () {
     $(this).toggleClass('open');
     $(this).find('.plus').toggleClass('d-none');

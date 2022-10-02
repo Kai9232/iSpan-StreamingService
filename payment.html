@@ -77,26 +77,26 @@
     <div class="row">
       <div class="col-4 col-md-5">
         <div class="timeline-pointer text-center step-1 active">
-          <a href="details.html">訂單明細</a>
+          <a class="fs-6" href="details.html">訂單明細</a>
         </div>
       </div>
       <div class="col-4 col-md-2">
         <div class="timeline-pointer text-center step-2 active">
-          <p>線上付款</p>
+          <p class="fs-6">線上付款</p>
         </div>
       </div>
       <div class="col-4 col-md-5">
         <div class="timeline-pointer text-center step-3">
-          <p>訂購完成</p>
+          <p class="fs-6">訂購完成</p>
         </div> 
       </div>
     </div>
   </div>
 </section>
-<section class="container pt-md-20 pb-md-30">
+<section class="container pt-4 pb-10 pt-md-20 pb-md-30">
   <form>
     <div class="row">
-      <div class="col-md-4 offset-md-2">
+      <div class="col-md-4 offset-md-2 mb-6 mb-md-0">
         <h3 class="fs-3 mb-4 mb-md-6">會員資料</h3>
         <label for="Name" class="form-label gray-500">姓名</label>
         <input type="text" class="form-control mb-4 mb-md-6" id="Name" placeholder="Robert Downey" disabled>
@@ -105,24 +105,34 @@
         <label for="Phone" class="form-label gray-500">電話</label>
         <input type="tel" class="form-control mb-4 mb-md-6" id="Phone" placeholder="0912-345-678" disabled>
         <label for="Address" class="form-label gray-500">地址</label>
-        <input type="text" class="form-control mb-4 mb-md-6" id="Address" placeholder="20 W 34th St., New York, NY 10001" disabled>
+        <input type="text" class="form-control" id="Address" placeholder="20 W 34th St., New York, NY 10001" disabled>
       </div>
       <div class="col-md-4">
-        <h3 class="fs-3 mb-4 mb-md-6">訂單資訊</h3>
-        <div class="bg-pay mb-4 mb-md-6">
-          <input class="form-check-input me-1" type="radio" name="Payment" id="creditCard1" checked>
-          <label class="form-check-label me-4" for="creditCard1">信用卡一次付清</label>
-          <input class="form-check-input me-1" type="radio" name="Payment" id="creditCard2">
-          <label class="form-check-label me-4" for="creditCard2">信用卡分期付款</label><br>
-          <input class="form-check-input me-1" type="radio" name="Payment" id="ATM">
-          <label class="form-check-label me-4" for="ATM">ATM轉帳</label>
-          <input class="form-check-input me-1" type="radio" name="Payment" id="mobile">
-          <label class="form-check-label me-4" for="mobile">行動支付</label>
-          <input class="form-check-input me-1" type="radio" name="Payment" id="market">
-          <label class="form-check-label me-4" for="market">超商代碼繳費</label>
-        </div>
-        <label for="cardName" class="form-label gray-500">持卡人姓名</label>
-        <input type="text" class="form-control mb-4 mb-md-6" id="cardName" name="CardName" placeholder="Your name">
+        <h3 class="fs-3 mb-4 mb-md-7">訂單資訊</h3>
+        <ul class="bg-gray-dull rounded-3 mb-4 mb-md-6 py-4 ps-6">
+          <li class="mb-1">
+            <input class="form-check-input me-1" type="radio" name="Payment" id="creditCard1" checked>
+            <label class="form-check-label me-4" for="creditCard1">信用卡一次付清</label>
+          </li>
+          <li class="mb-1">
+            <input class="form-check-input me-1" type="radio" name="Payment" id="creditCard2">
+            <label class="form-check-label me-4" for="creditCard2">信用卡分期付款</label>
+          </li>
+          <li class="mb-1">
+            <input class="form-check-input me-1" type="radio" name="Payment" id="ATM">
+            <label class="form-check-label me-4" for="ATM">ATM轉帳</label>
+          </li>
+          <li class="mb-1">
+            <input class="form-check-input me-1" type="radio" name="Payment" id="mobile">
+            <label class="form-check-label me-4" for="mobile">行動支付</label>
+          </li>
+          <li>
+            <input class="form-check-input me-1" type="radio" name="Payment" id="market">
+            <label class="form-check-label me-4" for="market">超商代碼繳費</label>
+          </li>
+        </ul>
+        <!-- <label for="cardName" class="form-label gray-500">持卡人姓名</label>
+        <input type="text" class="form-control mb-4 mb-md-6" id="cardName" name="CardName" placeholder="Your name"> -->
         <div class="row mb-4 mb-md-6">
           <div class="col-12">
             <label for="cardNumber" class="form-label gray-500">信用卡號</label>
@@ -130,21 +140,21 @@
           <div class="col-md-3">
             <input type="text" class="form-control me-1" id="cardNumber" name="cardNumber">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-none d-md-block">
             <input type="text" class="form-control me-1" id="cardNumber" name="cardNumber">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-none d-md-block">
             <input type="text" class="form-control me-1" id="cardNumber" name="cardNumber">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 d-none d-md-block">
             <input type="text" class="form-control" id="cardNumber" name="cardNumber">
           </div>
         </div>
-        <div class="row mb-6 mb-md-8">
+        <div class="row mb-8">
           <div class="col-12">
             <label class="form-label gray-500">有效日期</label>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <select class="form-select me-1">
               <option selected>請選擇</option>
               <option value="1">01</option>
@@ -161,7 +171,7 @@
               <option value="12">12</option>
             </select>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <select class="form-select me-1">
               <option selected>請選擇</option>
               <option value="1">2022</option>
@@ -178,14 +188,13 @@
               <option value="12">2033</option>
             </select>
           </div>
-          <div class="col-md-4">
+          <div class="col-4">
             <input type="text" class="form-control" placeholder="驗證碼">
           </div>
         </div>
         <div class="d-flex justify-content-between">
           <p class="fs-2 fw-bold font-roboto text-primary">NT $320</p>
           <a href="finish.html" class="btn btn-gradient fs-4 px-8 py-2">確認結帳</a>
-          <!-- <input type="submit" value="確認結帳" class="btn btn-gradient fs-4 px-8 py-2"> -->
         </div>
       </div>
     </div>
@@ -287,12 +296,12 @@
                       <div class="mb-4">
                         <label for="Text" class="form-label gray-500">帳號</label>
                         <input type="text" class="form-control bg-gray-dark mb-2" id="Text" required>
-                        <p class="gray-500">帳號請設定為您的 Email 或手機號碼</p>
+                        <p class="gray-500">請設定為您的 Email 或手機號碼</p>
                       </div>
                       <div class="mb-4">
                         <label for="Password" class="form-label gray-500">密碼</label>
                         <input type="password" class="form-control bg-gray-dark mb-2" id="Password" required>
-                        <p class="gray-500">密碼需為 6 碼以上的英文或數字</p>
+                        <p class="gray-500">請輸入 6 碼以上的英文或數字</p>
                       </div>
                       <p class="gray-500 mb-6">按下註冊的同時，表示您已詳閱我們的<span class="text-primary">資料使用政策與服務條款</span>，同意使用 RGS VIDEO 所提供的服務。</p>
                       <input type="submit" value="註冊" class="btn btn-gray-dull w-100 mb-6 py-2" disabled>
@@ -301,7 +310,7 @@
                       </p>
                       <div class="modal-footer border-0 p-0">
                         <div class="border-bottom border-gray-500 position-relative mb-7">
-                          <p class="login-text">用社群帳號快速註冊</p>
+                          <p class="login-text text-nowrap">社群帳號快速註冊</p>
                         </div>
                         <button class="btn btn-outline-gradient w-100 position-relative mb-4 mb-md-6 py-2"><img src="assets/images/icon_fb.svg" alt="Facebook" class="login-icon">Facebook 註冊</button>
                         <button class="btn btn-outline-gradient w-100 position-relative py-2"><img src="assets/images/icon_google.svg" alt="Google" class="login-icon">Google 註冊</button>
@@ -346,7 +355,7 @@
             <button type="button" class="btn btn-outline-gradient fs-6 text-white px-12 py-2" data-bs-dismiss="modal">關閉</button>
           </div>
           <div class="d-md-none fixed-bottom">
-            <button class="btn btn-outline-gradient fs-6 text-white w-100 py-3" type="button" data-bs-dismiss="modal">關閉</button>
+            <button class="btn btn-outline-gradient bg-gray-dark fs-6 text-white w-100 py-3" type="button" data-bs-dismiss="modal">關閉</button>
           </div>
         </div>
       </div>
