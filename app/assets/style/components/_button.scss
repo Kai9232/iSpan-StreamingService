@@ -48,6 +48,25 @@
       }
     }
   }
+  &-favorite {
+    cursor: pointer;
+    & .f-border {
+      display: block;
+    }
+    & .f-solid {
+      display: none;
+      color: $secondary;
+    }
+  }
+  &-share {
+    cursor: pointer;
+    & .s-solid {
+      display: block;
+    }
+    &:hover .s-solid, &:hover + p {
+      color: $secondary;
+    }
+  }
   &-chart {
     display: block;
     position: absolute;

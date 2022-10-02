@@ -128,3 +128,8 @@
 .rounded-6 {
   border-radius: 6px;
 }
+.border-bottom-md-0 {
+  @media (min-width:768px) {
+    border-bottom: none!important;
+  }
+}

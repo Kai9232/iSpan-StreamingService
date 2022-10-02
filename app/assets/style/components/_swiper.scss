@@ -101,31 +101,52 @@
     }
   }
   & .swiper-slide {
+    @media (min-width:768px) {
+      position: relative;
+    }
     & img {
-      filter: grayscale(100%);
+      display: none;
+      @media (min-width:768px) {
+        display: block;
+        filter: grayscale(100%);
+      }
     }
     &-active {
-      & img {
-        filter: grayscale(0);
-        border-radius: 16px;
-      }
       @media (min-width:768px) {
         width: calc(50% - 16px)!important;
       }
+      & img {
+          filter: grayscale(0);
+          border-radius: 12px;
+      }
       & .pricing-title {
         display: block;
-        position: absolute;
-        top: 16px;
-        right: 50%;
-        transform: translateX(50%);
-        font-size: 80px;
+        font-size: 48px;
         color: $white;
+        @media (min-width:768px) {
+          position: absolute;
+          top: 8px;
+          right: 50%;
+          transform: translateX(50%);
+          font-size: 80px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 80%;
+          height: 1px;
+          background-color: $white;
+          margin: 0 auto;
+          @media (min-width:768px) {
+            display: none;
+          }
+        }
       }
       & .pricing-btn {
-        display: block;
+        display: inline-block;
       }
       & .pricing-content {
-        display: block;
+          display: block;
       }
     }
     @media (min-width:768px) {
@@ -141,35 +162,41 @@
 .pricing {
   &-title {
     display: block;
-    position: absolute;
-    top: 64px;
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 48px;
-    color: $gray-700;
+    @media (min-width:768px) {
+      position: absolute;
+      top: 64px;
+      right: 50%;
+      transform: translateX(50%);
+      font-size: 48px;
+      color: $gray-700;
+    }
   }
   &-content {
     display: none;
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
-    left: 0;
+    @media (min-width:768px) {
+      position: absolute;
+      top: 55%;
+      transform: translateY(-50%);
+      left: 0;
+    }
   }
   &-btn {
     display: none;
-    position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 32px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     background-image: linear-gradient(104deg, #09ACF5, #62DB54);
     border: none;
     border-radius: 21px;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 8px 32px;
     &:hover {
       background-image: linear-gradient(104deg, #2eb8f7, #7ae06e);
+    }
+    @media (min-width:768px) {
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      bottom: 28px;
+      font-size: 20px;
     }
   }
 }
